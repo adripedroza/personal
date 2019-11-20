@@ -19,15 +19,16 @@ class SideBar extends Component {
       paddingLeft: '16px',
       display: "block"
     };
+
     return (
       <div style={sidebarStyle}>
-        <a href="/">Home</a><br/>
-        <a href="#about">About</a><br/>
-        <a href="#skills">Skills</a><br/>
-        <a href="#experience">Experience</a><br/>
-        <a href="#education">Education</a><br/>
-        <a href="#works">Work</a><br/>
-        <a href="#contact">Contact</a><br/>
+        <button onClick={this.props.onValueChange} value='home'>Home</button><br/>
+        <button onClick={this.props.onValueChange} value='about'>About</button><br/>
+        <button onClick={this.props.onValueChange} value='skills'>Skills</button><br/>
+        <button onClick={this.props.onValueChange} value='experience'>Experience</button><br/>
+        <button onClick={this.props.onValueChange} value='education'>Education</button><br/>
+        <button onClick={this.props.onValueChange} value='work'>Work</button><br/>
+        <button onClick={this.props.onValueChange} value='contact'>Contact</button><br/>
       </div>
     )
   }
